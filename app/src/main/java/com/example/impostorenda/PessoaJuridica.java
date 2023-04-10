@@ -2,10 +2,12 @@ package com.example.impostorenda;
 
 public class PessoaJuridica extends Pessoa {
 
-    public String CNPJ;
+    public PessoaJuridica(String nome, Double renda) {
+        super(nome, renda);
+    }
 
     @Override
     public double CalculaIR() {
-        return 0;
+        return super.getRenda() * 10/100;
     }
 }

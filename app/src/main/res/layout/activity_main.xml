@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
         android:text="Insira os dados:"
+        android:textSize="24dp"
+        android:textAlignment="center"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="83dp" />
+        tools:layout_editor_absoluteY="10dp" />
 
     <EditText
         android:id="@+id/editTextNomePesssoa"
@@ -57,10 +59,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/Finalizar"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:text="Finalizar" />
+
     <TextView
         android:id="@+id/resposta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center"/>
 
 </LinearLayout>
